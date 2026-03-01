@@ -8,6 +8,53 @@
   "vars": {
     "CF_TEAM_NAME": "rjbizsolutions"
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cloudflare-one-automation-db",
+      "database_id": ""
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "STORAGE",
+      "bucket_name": "cloudflare-one-automation-storage"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "CONFIG",
+      "id": ""
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "browser": {
+    "binding": "BROWSER"
+  },
+  "vectorize": [
+    {
+      "binding": "VECTORS",
+      "index_name": "cloudflare-one-automation-vectors"
+    }
+  ],
+  "queues": {
+    "producers": [
+      {
+        "binding": "JOBS",
+        "queue": "cloudflare-one-automation-jobs"
+      }
+    ]
+  },
+  "triggers": {
+    "crons": [
+      "0 */4 * * *",
+      "0 8 * * *",
+      "0 * * * *",
+      "0 */6 * * *"
+    ]
+  },
   "observability": {
     "enabled": true
   }
