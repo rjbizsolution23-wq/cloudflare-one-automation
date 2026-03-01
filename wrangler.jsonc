@@ -1,0 +1,14 @@
+{
+  "name": "cloudflare-one-automation",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-02-19",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "vars": {
+    "CF_TEAM_NAME": "rjbizsolutions"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
